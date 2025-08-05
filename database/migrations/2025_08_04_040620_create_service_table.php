@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('service', function (Blueprint $table) {
             $table->id();
             $table->string('service');
-            $table->int('price');
+            $table->integer('price');
             $table->enum('status', ['aktif', 'nonaktif']);
             $table->timestamps();
 

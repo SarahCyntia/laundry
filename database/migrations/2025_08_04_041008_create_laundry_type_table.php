@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('laundry_type', function (Blueprint $table) {
             $table->id();
+            $table->string('service');
+            $table->integer('price');
+            $table->string('estimate');
             $table->timestamps();
         });
     }
